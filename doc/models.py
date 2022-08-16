@@ -43,9 +43,9 @@ class Vote(models.Model):#vote cast
     def __str__(self):
         return "{} - {} - {} - {}".format(self.aspirant.name, self.aspirant.seat, self.station.center , self.station, self.vcast, self.date_created)
 
-class Votecast(models.Model):#restricting users view
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    vote = models.ForeignKey(Vote, on_delete=models.CASCADE)
+#class Votecast(models.Model):#restricting users view
+#    user = models.ForeignKey(User, on_delete=models.CASCADE)
+#    vote = models.ForeignKey(Vote, on_delete=models.CASCADE)
 
-    def __str__(self):
-        return "{} - {} - {}".format(self.user, self.vote)
+#    def __str__(self):
+#        return "{} - {} - {}".format(self.user, self.vote)

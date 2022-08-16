@@ -8,7 +8,7 @@ from import_export import fields, resources
 #from .models import Transaction, Reconciliation
 from import_export.admin import ImportExportModelAdmin
 from django.contrib import admin
-from .models import Upload, Seat, Aspirant, User, Vote, Votecast
+from .models import Upload, Seat, Aspirant, User, Vote
 
 
 #admin.site.register(Upload)
@@ -30,7 +30,7 @@ admin.site.register(Seat)
 admin.site.register(Aspirant)
 admin.site.register(User)
 admin.site.register(Vote)
-admin.site.register(Votecast)
+#admin.site.register(Votecast)
 
 '''
 class GpaymentResource(resources.ModelResource):
